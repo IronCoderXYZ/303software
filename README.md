@@ -1,6 +1,7 @@
 # 303 Software Technical Node Test
 
 Test for 303 Software
+Please note: The database configuration is hard-coded rather than being passed in as ENV variables to reduce complexity - the DB Instance is running in a sandbox and therefore does not pose a big risk in this particular instance.
 
 ## Getting Started
 
