@@ -1,0 +1,32 @@
+{
+  "name": "303software",
+  "version": "1.0.0",
+  "description": "Round 2 Technical Node + React Test",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "seed": "node config/seed.js",
+    "start": "node server.js",
+    "start-watch": "nodemon server.js",
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha \"./{,!(node_modules)/**/}*.test.js\" ",
+    "test-watch": "nodemon --exec 'npm test'"
+  },
+  "author": "Mitch Hankins",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
+    "mongodb": "^3.0.10",
+    "mongoose": "^5.1.6"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "expect": "^23.1.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.5",
+    "supertest": "^3.1.0"
+  }
+}
